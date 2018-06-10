@@ -1,0 +1,322 @@
+/*navbar*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 3vw;
+}
+
+li a:hover {
+    color: indianred;
+}
+
+/*logo*/
+
+header img {
+    float: left;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    width: 5%;
+}
+
+
+body {
+    background: url(images/dots.png);
+    background-size: auto;
+}
+
+
+/*my name svg*/
+
+#mySvg,
+.myName {
+    stroke: indianred;
+    stroke-width: 5px;
+    width: 50vw;
+    fill: gray;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    margin-left: 20%;
+}
+
+.draw {
+    animation: draw 2s forwards;
+
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/*button*/
+
+.homebtn {
+    background-color: #555555;
+    color: white;
+    border: none;
+    font-size: 1.5vw;
+    position: relative;
+    margin-left: 45%;
+    margin-right: -45;
+    margin-top: 50px;
+    padding: 10px 10px 10px 10px;
+}
+
+.homebtn:hover {
+    background-color: indianred;
+    color: black;
+}
+
+.butbox {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 40vw;
+    margin-top: 1vw;
+    margin-left: 32.5vw;
+}
+
+.butbox button {
+    width: 14vw;
+    background-color: #555555;
+    color: white;
+    border: none;
+    font-size: 1.5vw;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 1vw;
+}
+
+.butbox button:hover {
+    background-color: indianred;
+    color: black;
+}
+
+.onebtn{
+    width: 14vw;
+    background-color: #555555;
+    color: white;
+    border: none;
+    font-size: 1.5vw;
+    padding: 10px 10px 10px 10px;
+}
+
+.onebtn:hover{
+    background-color: indianred;
+    color: black;
+}
+
+#onebtn{
+    position: relative;
+    margin-left: 43%;
+    margin-right: -43;
+}
+
+#five{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 1vw;
+    margin-left: 14.25vw;
+}
+
+#five button{
+    margin-right: 1vw;
+}
+/*by me*/
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+}
+    
+
+    /*portfolio*/
+  .img1 {
+        width: 80%;
+        padding-bottom: 1vw;
+        padding-top: 1vw;
+        position: relative;
+    }
+
+    .workgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    @media all and (max-width:1150px) {
+        .workgrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            justify-items: center;
+            justify-content: center;
+        }
+    }
+
+    /*hover*/
+    .port1 {
+        position: relative;
+        width: 70%;
+    }
+
+    .img1 {
+        display: block;
+        width: 100%;
+        transition: .4s ease;
+        backface-visibility: hidden;
+    }
+
+    .mid {
+        transition: .4s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .port1:hover .img1 {
+        opacity: 0.3;
+    }
+
+    .port1:hover .mid {
+        opacity: 1;
+    }
+
+    .text {
+        background-color: indianred;
+        color: white;
+        font-size: 1.5vw;
+        padding: 1.2vw 2.4vw;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    /*individual porfolio pages*/
+    .portpic {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1 {
+        font-size: 4vw;
+        text-align: center;
+    }
+h2{
+    font-size: 1.5vw;
+}
+
+    .portpara {
+        font-weight: 100;
+    }
+
+
+    /*grid for portfolio page*/
+    .portgrid {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    #whitebox1 {
+        background-color: whitesmoke;
+        opacity: 0.8;
+        text-align: center;
+        margin-left: 3vw;
+        margin-bottom: 5vw;
+        margin-top: 5vw;
+    }
+
+    #whitebox2 {
+        background-color: whitesmoke;
+        opacity: 0.8;
+        text-align: center;
+        margin-right: 3vw;
+        margin-bottom: 5vw;
+        margin-top: 5vw;
+    }
+
+    @media all and (max-width:1070px) {
+        .portgrid {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+        }
+        
+        .fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 5px;
+        font-size: 6px;
+    }
+    }
+
+/*About me page*/
+
+.aboutgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 6.5vw;
+}
+
+.aboutgrid h2{
+    background-color: whitesmoke;
+        opacity: 0.8;
+        text-align: center;
+    margin-top: -4vw;
+}
+
+#me{
+    border: 0.1vw solid gray;
+    margin-left: 1vw;
+    margin-top: -4vw;
+}
+
+.speech-bubble {
+	position: relative;
+	background: #f5f5f5;
+	border-radius: .4em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 51px solid transparent;
+	border-right-color: #f5f5f5;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -25.5px;
+	margin-left: -51px;
+}
